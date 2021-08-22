@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Slider app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <div class="app">
+      <div class="upper-text">
+        <h1 class="header-text">Simple, traffic-based pricing</h1>
+        <p class="subhead">
+          Sign-up for our 30-day trial. No credit card required.
+        </p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="pattern-circles"
+          width="146"
+          height="145"
+        >
+          <g fill="none" fill-rule="evenodd" stroke="#CFD8EF">
+            <circle cx="63" cy="82" r="62.5" />
+            <circle cx="105" cy="41" r="40.5" />
+          </g>
+        </svg>
+      </div>
+      <div class="container">
+        <div class="upper">
+          <div class="upper-price left">
+            <p class="pageviews">100k pageviews</p>
+          </div>
+          <div class="upper-price right">
+            <p class="price">$16.00</p>
+            <p class="month">/month</p>
+          </div>
+          <div class="slider">
+            <div class="wrap">
+              <input
+                type="range"
+                class="range"
+                min="0"
+                max="100"
+                step="0.1"
+                value="0"
+              />
+              <div class="track">
+                <div class="track-inner"></div>
+              </div>
+              <div class="thumb">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="slider-icon"
+                  width="22"
+                  height="13"
+                >
+                  <g fill="#80FFF3" fill-rule="evenodd">
+                    <path
+                      d="M16 2.558v7.884a1 1 0 001.735.679l3.639-3.943a1 1 0 000-1.356l-3.64-3.943A1 1 0 0016 2.558zM6 2.558v7.884a1 1 0 01-1.735.679L.626 7.178a1 1 0 010-1.356l3.64-3.943A1 1 0 016 2.558z"
+                    />
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="options">
+          <p class="billing">Monthly Billing</p>
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slide round"></span>
+          </label>
+          <p class="billing">Yearly Billing</p>
+          <p class="tag"><span>25% discount</span></p>
+        </div>
+        <div class="trial-box">
+          <ul class="feature-list">
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="check"
+                width="9"
+                height="8"
+              >
+                <path
+                  fill="none"
+                  stroke="#10D8C4"
+                  stroke-width="2"
+                  d="M1 4.134l1.907 1.908L7.949 1"
+                /></svg
+              >Unlimited websites
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="check"
+                width="9"
+                height="8"
+              >
+                <path
+                  fill="none"
+                  stroke="#10D8C4"
+                  stroke-width="2"
+                  d="M1 4.134l1.907 1.908L7.949 1"
+                /></svg
+              >100% data ownership
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="check"
+                width="9"
+                height="8"
+              >
+                <path
+                  fill="none"
+                  stroke="#10D8C4"
+                  stroke-width="2"
+                  d="M1 4.134l1.907 1.908L7.949 1"
+                /></svg
+              >Email reports
+            </li>
+          </ul>
+          <button class="btn">Start my trial</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
